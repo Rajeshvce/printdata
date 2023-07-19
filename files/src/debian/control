@@ -1,0 +1,12 @@
+Source: printdata
+Maintainer: unknown <unknown>
+Section: misc
+Priority: optional
+Standards-Version: 1.1.1
+Build-Depends: debhelper (>= 9)
+
+Package: printdata
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: greet user
+ printdata greets the user, or the world.

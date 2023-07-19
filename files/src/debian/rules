@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+DESTDIR = debian/printdata
+%:
+	dh $@
+
+override_dh_auto_clean:
+	:
+
+override_dh_auto_install:
+	install -m 0755 -d ${DESTDIR}/usr/bin
+	install -m 0755 printdata ${DESTDIR}/usr/bin	
